@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Berdida Working Portfolio</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lobster|Roboto:400,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/animate.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/wow.min.js"></script>
+
+	<script>
+		new WOW().init();
+
+		function printContent(){
+
+			var printContent = document.body.innerHTML;
+			window.print();
+		}
+
+
+		$(document).ready(function(){
+
+			$('#focusAbout').click(function(){
+
+					var target = $('.about');
+
+					$('html,body').animate({scrollTop:target.offset().top});
+					return false;
+			});
+
+		});
+	</script>
+</head>
+
+</head>
+<body>
+	
+	<div class="header">
+			<div class="brand wow lightSpeedIn animated" data-wow-delay="1s">
+				<strong>Berdida</strong>
+			</div><!--end of brand-->
+
+			<div class="navbar wow lightSpeedIn animated" data-wow-delay="2s">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+				<li id="focusAbout"><a href="#">About</a></li>
+			</ul>
+			</div><!--end of navbar-->
+	</div><!--end of header-->
+
+	<div class="jumbotron">
+			<div class="image wow lightSpeedIn animated" data-wow-delay="3s">
+			
+				<h1>My Working Portfolio</h1>
+				<p>I'm John Louise Berdida that can helps you create a responsive websites that you always wanted.</p>
+				<div class="btn">
+				<button type="button" class="button">Contact Me</button>
+				</div>
+
+			</div>
+	</div><!--end of jumbotron-->
+
+
+	<div class="wrapper">
+
+		<div class="hLine wow lightSpeedIn animated" data-wow-delay="4s">
+
+			<div class="horizontal"></div>
+			<div class="text">Recent Project</div>
+			<div class="horizontal"></div>
+
+		</div><!--end of hLine-->
+
+		<div class="clear"></div>
+
+		<div class="gallery  wow lightSpeedIn animated" data-wow-delay="5s">
+
+				<img src="img/gallery1.png" alt="galler1">
+				<img src="img/gallery2.png" alt="gallery2">
+				<img src="img/gallery1.png" alt="galler1">
+				<img src="img/gallery2.png" alt="gallery2">
+				<img src="img/gallery1.png" alt="galler1">
+				<img src="img/gallery2.png" alt="gallery2">
+
+		</div><!--end of gallery-->
+
+		<div class="hLine wow lightSpeedIn animated" data-wow-delay="1s">
+
+			<div class="horizontal"></div>
+			<div class="text">What I Do</div>
+			<div class="horizontal"></div>
+
+		</div><!--end of hLine-->
+
+		<div class="clear"></div>
+		
+		<div class="about">
+				
+				<div class="section wow lightSpeedIn animated" data-wow-delay="1s">
+					<img src="img/ico/settings.png" alt="galler1">
+					<h1>Web Development</h1>
+					<p>I am freelance Frontend Web Developer who can helps you create a responsive website or blog. Knowledgeable in HTML5 , CSS3, JavaScript , Jquery , SASS CSS extension language , PHP , Bootstrap / Foundation Framework &amp; MySql. </p>
+				</div>
+
+				<div class="section wow lightSpeedIn animated" data-wow-delay="1s">
+					<img src="img/ico/laptop.png" alt="gallery2">
+					<h1>Computer Technician</h1>
+					<p>I am also a Computer Geek and Computer Technician that repairs computer and Laptop also. Expert in modifying computers and assembling.</p>
+				</div>
+				
+				<div class="section wow lightSpeedIn animated" data-wow-delay="1s">
+					<img src="img/ico/joystick.png" alt="galler1">
+					<h1>Gamer</h1>
+					<p>I played a lots of games like RPG games and Dota 2.</p>	
+				</div>
+				
+
+		</div><!--end of about-->
+		
+	</div><!--end of wrapper-->
+
+	<div class="clear"></div>
+	<footer>
+
+		<div class="footer-wrapper">
+
+				<div class="post wow lightSpeedIn animated" data-wow-delay="1s">
+					<h3>Social Media</h3>
+
+					<img src="img/ico/facebook.png" alt="facebook">
+					<img src="img/ico/linkedin.png" alt="linkedin">
+					<img src="img/ico/youtube.png" alt="youtube">
+				</div>
+
+				<div class="photo wow rubberBand animated" data-wow-delay="1ms">
+					<h3>Recent Photos</h3>
+					<img src="img/photo/1.jpg" alt="1">
+					<img src="img/photo/2.jpg" alt="2">
+					<img src="img/photo/3.jpg" alt="3">
+					<img src="img/photo/4.jpg" alt="4">
+					<img src="img/photo/5.jpg" alt="5">
+					<img src="img/photo/6.jpg" alt="6">
+					<img src="img/photo/7.jpg" alt="7">
+					<img src="img/photo/8.jpg" alt="8">
+				</div>
+
+				<div class="hero-image wow lightSpeedIn animated" data-wow-delay="1s">
+					<div class="logo">Designed and built with all the love in the world by John Louise Berdida.</div>
+				</div>
+				<div class="clear"></div>				
+				
+				<hr>
+
+				<div class="left">
+					&copy; 2015 <strong>Berdida</strong> All Rights Reserved.
+				</div>
+				<div class="right">Working Portfolio by John Louise Berdida</div>
+
+
+		</div>
+
+		<button onclick="printContent()">Print Me</button>
+
+	</footer><!--end of footer-->
+	
+
+
+
+</body>
+</html>
